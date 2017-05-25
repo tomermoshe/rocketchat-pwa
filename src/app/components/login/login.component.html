@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="login-page">
+  <ion-card class="login-card" center>
+    <ion-card-header>
+      Login
+    </ion-card-header>
+
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="model.username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="model.password"></ion-input>
+    </ion-item>
+    <ion-row class="login-buttons">
+      <button ion-button (click)="login()">Login</button>
+    </ion-row>
+  </ion-card>
+</div>
